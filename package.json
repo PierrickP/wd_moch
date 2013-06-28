@@ -1,0 +1,16 @@
+{
+	"name": "WD_Mock_test",
+	"description": "Browser unit test for LBA",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"selenium-webdriver": "2.33.x",
+		"chai": "1.7.x"
+	},
+	"devDependencies": {
+		"mocha": "1.11.x"
+	},
+	"scripts": {
+		"start": "mocha -t 20000 -b -R spec tests/*.js"
+	}
+}
