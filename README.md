@@ -1,37 +1,43 @@
 # WD_Mock_test
 
-Le nom est loin d'etre top, il correspond simplement aux technos utilisées.
+Le nom est loin d'être top, il correspond simplement aux technos utilisées.
 
 ## Cahier des charges
 
-Eviter les régressions.
-Pour cela il faudrait tester le site dans les conditions les plus réels.
+Éviter les régressions.
+Pour cela il faudrait tester le site dans les conditions les plus réelles.
 
 ## Techno
 
-Pour faire des tests **sur** le browser (simplement) il n'y a pas 36 choix.
-Je suis partie sur **Selenium WebDriver** (version js)
-**Mocha** pour la suite de test (vraiment top !) et **Chai** pour les *assertion*
+Pour faire des tests **sur** le navigateur (simplement) il n'y a pas 36 choix.
+Je suis parti sur **Selenium WebDriver** (version js)
+**Mocha** pour la suite de test (vraiment top !) et **Chai** pour les *assertion*.
 
 ## Utilisation
 
-Cloner le depot, ``npm install`` et ``npm install -g Mocha``
-Il faut lancer le *serveur selenium* avec la commande ``java -jar selenium-server-standalone-2.33.0.jar``
+Installation :
+
+    git clone https://github.com/PierrickP/wd_moch.git
+    cd wd_moch
+    npm install
+    npm install -g Mocha
+
+Il faut lancer le *serveur selenium* avec la commande `java -jar selenium-server-standalone-2.33.0.jar`.
 
 Oui il faut *java* :sob:
 
-Enfin, ``npm start``
+Enfin, `npm start`.
 
-Pas oublier d'avoir **LBA** de lancer
+Ne pas oublier d'avoir **LBA** de lancé.
 
 ## Extension
 
-Pour l'instant la suite de tests, test la homepage avec :
+Pour l'instant la suite de tests vérifie la page d'accueil avec :
 
-* Fonctionnement du modal de video
-* Verification des 2 liens ``/chef-a-domicile``
-* Recherche tres simple avec **Paris**
-* Verification du fonctionnement de l'auto-completion
-* Verification du calendrier
-* Verification de l'heure
-* Enfin, on verifi que la page d'arrivé soit la bonne
+* Fonctionnement du modal de vidéo
+* Vérification des 2 liens `/chef-a-domicile`
+* Recherche très simple avec **Paris**
+* Vérification du fonctionnement de l'auto-complétion
+* Vérification du calendrier
+* Vérification de l'heure
+* Enfin, on verifie que la page d'arrivée soit la bonne
